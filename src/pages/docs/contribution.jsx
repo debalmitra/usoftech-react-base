@@ -26,6 +26,8 @@ export default function Contribution() {
       <AppNavbar title="Contribution" backLink />
 
       <div className="app-container">
+        {/* Introduction */}
+
         <Block strong inset>
           <h1>Contribute to the Base</h1>
 
@@ -40,6 +42,8 @@ export default function Contribution() {
           </p>
         </Block>
 
+        {/* Before You Contribute */}
+
         <BlockTitle>Before You Contribute</BlockTitle>
 
         <Card>
@@ -49,29 +53,31 @@ export default function Contribution() {
               feature or dependency.
             </p>
 
-            <List dividersIos>
+            <List strongIos outlineIos insetIos mediaList>
               <ListItem
                 title="Keep it simple"
-                after="Avoid unnecessary abstraction"
+                subtitle="Avoid unnecessary abstraction"
               />
 
               <ListItem
                 title="Keep it lightweight"
-                after="Prefer existing capabilities"
+                subtitle="Prefer existing capabilities"
               />
 
               <ListItem
                 title="Keep it reusable"
-                after="Build for future projects"
+                subtitle="Build for future projects"
               />
 
               <ListItem
                 title="Keep it consistent"
-                after="Follow the Base architecture"
+                subtitle="Follow the Base architecture"
               />
             </List>
           </Block>
         </Card>
+
+        {/* What Belongs */}
 
         <BlockTitle>What Belongs in the Base?</BlockTitle>
 
@@ -81,7 +87,7 @@ export default function Contribution() {
             multiple applications.
           </p>
 
-          <List strongIos outlineIos insetIos>
+          <List strongIos outlineIos insetIos mediaList>
             <ListItem
               title="Core Services"
               subtitle="API, storage, navigation, validation"
@@ -104,6 +110,8 @@ export default function Contribution() {
           </List>
         </Block>
 
+        {/* What Does Not Belong */}
+
         <BlockTitle>What Does Not Belong?</BlockTitle>
 
         <Block strong inset>
@@ -112,7 +120,7 @@ export default function Contribution() {
             project.
           </p>
 
-          <List dividersIos>
+          <List strongIos outlineIos insetIos>
             <ListItem title="Suppliers" after="Project" />
 
             <ListItem title="Products" after="Project" />
@@ -124,6 +132,8 @@ export default function Contribution() {
             <ListItem title="Business Reports" after="Project" />
           </List>
         </Block>
+
+        {/* Contribution Process */}
 
         <BlockTitle>Contribution Process</BlockTitle>
 
@@ -158,6 +168,8 @@ export default function Contribution() {
           </p>
         </Block>
 
+        {/* Adding Core Service */}
+
         <BlockTitle>Adding a New Core Service</BlockTitle>
 
         <Block strong inset>
@@ -185,6 +197,8 @@ ExampleService.doSomething();`}
           </pre>
         </Block>
 
+        {/* Documentation & Examples */}
+
         <BlockTitle>Documentation & Examples</BlockTitle>
 
         <Block strong inset>
@@ -202,6 +216,8 @@ ExampleService.doSomething();`}
           </Button>
         </Block>
 
+        {/* Contribution Principle */}
+
         <BlockTitle>Contribution Principle</BlockTitle>
 
         <Block strong inset>
@@ -212,6 +228,8 @@ ExampleService.doSomething();`}
             to use, or more useful across future applications.
           </p>
         </Block>
+
+        {/* Credits */}
 
         <BlockTitle>Credits & Acknowledgements</BlockTitle>
 
@@ -258,6 +276,8 @@ ExampleService.doSomething();`}
           </List>
         </Block>
 
+        {/* Foundation */}
+
         <Block strong inset>
           <h3>A Foundation Built for Developers</h3>
 
@@ -278,6 +298,7 @@ ExampleService.doSomething();`}
           <h3>Build simply. Build confidently.</h3>
         </Block>
       </div>
+
       <BackToTop />
     </Page>
   );

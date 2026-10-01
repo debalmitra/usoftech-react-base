@@ -29,3 +29,11 @@ body,
 .app-code-block code {
   font-family: inherit;
 }
+
+.item-subtitle {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  height: auto !important;
+  line-height: 1.4;
+}

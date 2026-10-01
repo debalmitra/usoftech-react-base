@@ -6,25 +6,29 @@ import routes from "./routes";
 import ThemeService from "../core/ThemeService";
 import AppMenu from "../components/AppMenu.jsx";
 
+const preferences = ThemeService.getPreferences();
+
+const f7params = {
+  theme: ThemeService.getPlatform(preferences.platform),
+
+  colors: {
+    primary: ThemeService.getColor(preferences.color),
+  },
+
+  darkMode: ThemeService.getDarkMode(preferences.colorScheme),
+
+  view: {
+    browserHistory: true,
+
+    browserHistoryRoot: window.location.origin,
+
+    browserHistorySeparator: "",
+
+    browserHistoryInitialMatch: true,
+  },
+};
+
 export default function App() {
-  const preferences = ThemeService.getPreferences();
-
-  const f7params = {
-    theme: ThemeService.getPlatform(preferences.platform),
-
-    colors: {
-      primary: ThemeService.getColor(preferences.color),
-    },
-
-    darkMode: ThemeService.getDarkMode(preferences.colorScheme),
-
-    view: {
-      browserHistory: true,
-      browserHistorySeparator: "",
-      browserHistoryInitialMatch: true,
-    },
-  };
-
   useEffect(() => {
     const handlePageBeforeOut = (page) => {
       const activeElement = document.activeElement;
