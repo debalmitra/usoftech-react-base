@@ -1,0 +1,49 @@
+.back-to-top {
+  position: fixed;
+
+  right: 20px;
+  bottom: 20px;
+
+  z-index: 10000;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(20px);
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    visibility 0.25s ease;
+
+  pointer-events: none;
+}
+
+.back-to-top-visible {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateY(0);
+
+  pointer-events: auto;
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+  .back-to-top {
+    right: 16px;
+
+    bottom: calc(16px + env(safe-area-inset-bottom));
+  }
+}
+
+/* Small phones */
+
+@media (max-width: 480px) {
+  .back-to-top {
+    right: 12px;
+
+    bottom: calc(12px + env(safe-area-inset-bottom));
+  }
+}

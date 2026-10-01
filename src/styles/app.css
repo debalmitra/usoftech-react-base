@@ -1,0 +1,31 @@
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.app-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.panel .list-item {
+  cursor: pointer;
+}
+.app-code-block {
+  overflow-x: auto;
+  margin: 16px 0;
+  padding: 16px;
+  border-radius: 12px;
+  background: var(--f7-block-strong-bg-color);
+  color: var(--f7-text-color);
+  font-family: monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  white-space: pre;
+}
+
+.app-code-block code {
+  font-family: inherit;
+}
