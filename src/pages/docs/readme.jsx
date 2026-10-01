@@ -415,8 +415,7 @@ try {
 
           <pre className="app-code-block">
             <code>
-              {`git clone <repository-url> my-project
-cd my-project`}
+              {`gh repo clone debalmitra/usoftech-react-base my-project cd my-project`}
             </code>
           </pre>
 
